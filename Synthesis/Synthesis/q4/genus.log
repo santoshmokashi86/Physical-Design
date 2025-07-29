@@ -1,0 +1,469 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 20.11-s111_1, built Mon Apr 26 02:27:38 PDT 2021
+Options: 
+Date:    Fri Jun 27 13:03:26 2025
+Host:    cadencesystem39.pes.edu (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (4cores*4cpus*1physical cpu*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB) (7893348KB)
+PID:     10624
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+Checkout succeeded: Genus_Synthesis/4F9ADAD29ECB755BE23B
+	License file: 5280@14.139.1.126
+	License Server: 5280@14.139.1.126
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (8 seconds elapsed).
+
+WARNING: This version of the tool is 1522 days old.
+@genus:root: 1> source synth.tcl
+Sourcing './synth.tcl' (Fri Jun 27 13:03:52 IST 2025)...
+#@ Begin verbose source ./synth.tcl
+@file(synth.tcl) 1: read_libs /home/installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+
+Threads Configured:3
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab4' (File /home/installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 88865)
+        : Sequential timing checks, such as 'setup_rising' or 'hold_rising', on flop and latch cells require a clock pin. Verify that the 'clock' attribute of the clock pin is set to 'true' or that the clock pin has a 'clocked_on' attribute.
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab2' (File /home/installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 128091)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab1' (File /home/installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 211382)
+
+  Message Summary for Library tsl18fs120_scl_ff.lib:
+  **************************************************
+  Missing clock pin in the sequential cell. [LBR-525]: 3
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  **************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.980000, -40.000000) in library 'tsl18fs120_scl_ff.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Cell 'slbhb2' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+        : This library has a valid test_cell function, but its regular cell function is either missing or not completely understood (for example, cell has a state_table construct). Consult your library vendor about why this cell is either missing or has an incorrectly specified cell non-test function. Comparing this cell to the other cells that do not display this Warning, can be helpful to debug the issue.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slchq4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Cell 'slbhb1' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slclq2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Cell 'slbhb4' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slclq1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slchq1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slchq2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slclq4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+@file(synth.tcl) 2: read_hdl design_with_multipleclk.v
+@file(synth.tcl) 3: elaborate
+Warning : Libcell will be treated as a timing model. [LBR-158]
+        : Lib_pin 'bh01d1/I' has no incoming arcs.
+        : Ensure that the relevant timing arcs are defined in the Liberty model of the libcell.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'design_with_multipleclk' from file 'design_with_multipleclk.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'design_with_multipleclk'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: design_with_multipleclk, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: design_with_multipleclk, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(synth.tcl) 4: source create_clock.sdc
+Sourcing './create_clock.sdc' (Fri Jun 27 13:03:53 IST 2025)...
+#@ Begin verbose source ./create_clock.sdc
+@file(create_clock.sdc) 2: create_clock -name clk -period 10.0 [get_ports clk]
+@file(create_clock.sdc) 4: set_input_transition -clock clk -max 0.5 -min 0.2 [get_ports -filter {direction == "INPUT"}]
+Error   : Invalid value for object attribute. [TUI-194] [get_ports_fast]
+        : Invalid value 'INPUT' is provided for 'direction' attribute.
+        : Refer to the Command Reference for details.
+Error   : Invalid SDC command option combination. [SDC-204] [get_ports]
+        : The 'get_ports' command contains an invalid filter expression that cannot be used with object type 'port'.
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+#@ End verbose source ./create_clock.sdc
+#@ End verbose source ./synth.tcl
+@genus:root: 2> report
+Error   : A required argument was not specified. [TUI-202] [report]
+        : Missing subcommand
+        : Rerun the command specifying all required arguments.
+  report: generate one of various reports
+Usage: report subcommand [-h]
+
+  The 'subcommand' can be one of the following:
+area                             - prints an area report
+boundary_opto                    - reports boundary optimization summary
+case_analysis                    - prints a case_analysis report
+cdn_loop_breaker                 - reports the cdn_loop_breaker instances
+cell_delay_calculation           - reports how the cell delay of a libcell instance is calculated
+clock_gating                     - prints a clock-gating report
+clocks                           - prints a clock report
+congestion                       - reports congestion summary
+datapath                         - prints a datapath resources report
+dedicated_clock_remapping_report - prints remap_to_dedicated_clock_library report
+design_rules                     - prints design rule violations
+dft_chains                       - reports DFT scan chains
+dft_clock_domain_info            - reports DFT clock domain information with OPCG inserted logic
+dft_core_wrapper                 - reports the IEEE 1500 core wrapper segments inserted for ports and pins
+dft_registers                    - reports DFT status of registers
+dft_setup                        - reports DFT setup for scan
+dft_violations                   - reports DFT rule violations
+gates                            - prints a gates report
+hierarchy                        - prints a hierarchy report
+instance                         - prints an instance report
+low_power_intent                 - prints Power Intent report
+memory                           - prints a memory usage report
+memory_cells                     - print memory cells in the library
+messages                         - prints a summary of error messages that have been issued
+min_pulse_width                  - prints min pulse width violations
+mode                             - prints a mode report
+module                           - prints a module report
+multibit_inferencing             - prints a multibit inferencing report
+net_cap_calculation              - reports how the capacitance of the net is calculated
+net_delay_calculation            - reports how the net delay is calculated
+net_res_calculation              - reports how the resistance of the net is calculated
+nets                             - prints a nets report
+opcg_equivalents                 - reports the scan cell to OPCG cell equivalent mappings for cells specified using the 'set_opcg_equivalent' command
+ple                              - reports physical layout estimation data
+port                             - prints a port report
+power                            - prints a power report
+power_intent                     - prints Power Intent report
+power_intent_instances           - prints Low Power cells report
+property                         - list all the properties
+proto                            - reports prototype synthesis information
+qor                              - prints a QOR report
+report_delay_calculation         - reports how the net and cell delay is calculated
+scan_compressibility             - reports the scan compressibility of the design having previously run the 'analyze_scan_compressibility' command
+sequential                       - prints a sequential instance report
+slew_calculation                 - reports how the slew on the driver pin of a libcell instance is calculated
+summary                          - prints an area, timing, and design rules report
+test_power                       - estimates the average scan power in shift and capture modes during test
+timing                           - prints a timing report
+units                            - reports units
+utilization                      - reports how floorplan utilization is calculated
+yield                            - prints a yield report
+Failed on 'report '
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> 
+@genus:root: 3> report_timing
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 20.11-s111_1
+  Generated on:           Jun 27 2025  01:04:08 pm
+  Module:                 design_with_multipleclk
+  Operating conditions:   _nominal_ (balanced_tree)
+  Wireload mode:          enclosed
+  Area mode:              timing library
+============================================================
+
+
+Path 1: MET (4610 ps) Setup Check with Pin q_reg/clk->d
+          Group: clk
+     Startpoint: (R) n_reg/clk
+          Clock: (F) clk
+       Endpoint: (R) q_reg/d
+          Clock: (R) clk
+
+                     Capture       Launch     
+        Clock Edge:+   10000         5000     
+       Src Latency:+       0            0     
+       Net Latency:+       0 (I)        0 (I) 
+           Arrival:=   10000         5000     
+                                              
+             Setup:-      56                  
+     Required Time:=    9944                  
+      Launch Clock:-    5000                  
+         Data Path:-     334                  
+             Slack:=    4610                  
+
+#--------------------------------------------------------------------------------------------------
+#  Timing Point    Flags     Arc    Edge      Cell        Fanout Load Trans Delay Arrival Instance 
+#                                                                (fF)  (ps)  (ps)   (ps)  Location 
+#--------------------------------------------------------------------------------------------------
+  n_reg/clk        -       -        R     (arrival)            1    -     0     0    5000    (-,-) 
+  n_reg/q          (u)     clk->q   R     unmapped_d_flop      2 12.0     0   255    5255    (-,-) 
+  mux_q_21_14/g1/z (u)     data0->z R     unmapped_bmux3       1  6.0     0    80    5334    (-,-) 
+  q_reg/d          <<<     -        R     unmapped_d_flop      1    -     -     0    5334    (-,-) 
+#--------------------------------------------------------------------------------------------------
+
+(u) : Net has unmapped pin(s).
+
+@genus:root: 4> report timing abc.txt
+Error   : A required object parameter could not be found. [TUI-61] [_report_timing]
+        : An object of type 'timing_path' named 'abc.txt' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  _report_timing: prints a timing report 
+
+Usage: _report_timing [-fields <string>] [-output_format <string>]
+           [-path_type <string>] [-split_delay] [-stage_delay] [-hpins] [-nets]
+           [-exception_data] [-unconstrained] [-physical] [-user_derate]
+           [-user_mean_derate] [-user_sigma_derate] [-incr_derate] [-gui]
+           [-max_paths <integer>] [-nworst <integer>] [-logic_levels <integer>]
+           [-skip_buf] [-skip_inv] [-logic_levels_tcl_list] [-max_slack <float>]
+           [-min_slack <float>] [-paths <string>] [-domain <clock_domain>]
+           [-views <analysis_view>+] [-collection]
+           [ -from <inst|hinst|external_delay|clock|port|pin|hpin>+ |
+             -from_rise <inst|hinst|external_delay|clock|port|pin|hpin>+ |
+             -from_fall <inst|hinst|external_delay|clock|port|pin|hpin>+ ]
+           [ -through <inst|hinst|hnet|port|pin|hpin>+ |
+             -through_rise <inst|hinst|hnet|port|pin|hpin>+ |
+             -through_fall <inst|hinst|hnet|port|pin|hpin>+ ]+
+           [ -not_through <inst|hinst|hnet|port|pin|hpin>+ |
+             -not_through_rise <inst|hinst|hnet|port|pin|hpin>+ |
+             -not_through_fall <inst|hinst|hnet|port|pin|hpin>+ ]
+           [ -to <inst|hinst|external_delay|clock|port|pin|hpin>+ |
+             -to_rise <inst|hinst|external_delay|clock|port|pin|hpin>+ |
+             -to_fall <inst|hinst|external_delay|clock|port|pin|hpin>+ ]
+           [ -capture_clock_pins <pin|hpin>+ |
+             -capture_clock_pins_rise_clock <pin|hpin>+ |
+             -capture_clock_pins_fall_clock <pin|hpin>+ |
+             -capture_clock_pins_rise_pin <pin|hpin>+ |
+             -capture_clock_pins_fall_pin <pin|hpin>+ ]
+           [-exceptions <exception>+] [-group <cost_group>+]
+           [-timing_bin <timing_bin>] [-timing_path <timing_bin_path>]
+           [<timing_path>+] [> file]
+
+    [-fields <string>]:
+        fields 
+    [-output_format <string>]:
+        supported output format types are <gtd|text> 
+    [-path_type <string>]:
+        supported path types are <full|summary|full_clock|endpoint> 
+    [-split_delay]:
+        displays both drivers and loads in the data path 
+    [-stage_delay]:
+        displays only drivers in the data path 
+    [-hpins]:
+        displays hierarchical pins in the data path 
+    [-nets]:
+        displays nets in the data path 
+    [-exception_data]:
+        displays the exception cross-linking information 
+    [-unconstrained]:
+        displays the unconstrained paths 
+    [-physical]:
+        include physical information in report 
+    [-user_derate]:
+        show 'user_derate' column in timing reports 
+    [-user_mean_derate]:
+        show 'user_mean_derate' column in timing reports 
+    [-user_sigma_derate]:
+        show 'user_sigma_derate' column in timing reports 
+    [-incr_derate]:
+        show 'incr_derate' column in timing reports 
+    [-gui]:
+        invoke GUI timing report dialog 
+    [-max_paths <integer>]:
+        number of paths 
+    [-nworst <integer>]:
+        number of worst paths to each endpoint (inapplicable to path_type 
+        endpoint) 
+    [-logic_levels <integer>]:
+        number of paths to report in the output 
+    [-skip_buf]:
+        skip buffers when computing logic levels 
+    [-skip_inv]:
+        skip inverters when computing logic levels 
+    [-logic_levels_tcl_list]:
+        list output 
+    [-max_slack <float>]:
+        only paths with less than this slack 
+    [-min_slack <float>]:
+        only paths with greater than this slack 
+    [-paths <string>]:
+        a path identifier result from the specify_paths command 
+    [-domain <clock_domain>]:
+        a clock domain the paths should be restricted to 
+    [-views <analysis_view>+]:
+        a view the paths should be restricted to 
+    [-collection]:
+        return a collection of timing paths 
+    -from <inst|hinst|external_delay|clock|port|pin|hpin>+:
+        a set of startpoints for the paths 
+    -from_rise <inst|hinst|external_delay|clock|port|pin|hpin>+:
+        startpoints with a rise transition at the pin itself 
+    -from_fall <inst|hinst|external_delay|clock|port|pin|hpin>+:
+        startpoints with a fall transition at the pin itself 
+    -through <inst|hinst|hnet|port|pin|hpin>+:
+        specifies paths that pass through these pins or instances. This option 
+        can be repeated indicating that the path must go through at least one 
+        element of each through list (in the order the options were specified). 
+        Objects must be ports, hierarchical pins, pins on sequential/mapped 
+        combinational cells, or sequential/mapped combinational instances 
+    -through_rise <inst|hinst|hnet|port|pin|hpin>+:
+        this option specifies paths that contain a rise transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_fall_pin 
+    -through_fall <inst|hinst|hnet|port|pin|hpin>+:
+        this option specifies paths that contain a fall transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_rise_pin 
+    -not_through <inst|hinst|hnet|port|pin|hpin>+:
+        specifies paths that do not pass through these pins or instances. 
+        Objects must be ports, hierarchical pins, pins on sequential/mapped 
+        combinational cells, or sequential/mapped combinational instances 
+    -not_through_rise <inst|hinst|hnet|port|pin|hpin>+:
+        this option specifies paths that does not contain a rise transition in 
+        one of these objects 
+    -not_through_fall <inst|hinst|hnet|port|pin|hpin>+:
+        this option specifies paths that does not contain a fall transition in 
+        one of these objects 
+    -to <inst|hinst|external_delay|clock|port|pin|hpin>+:
+        a set of endpoints for the paths 
+    -to_rise <inst|hinst|external_delay|clock|port|pin|hpin>+:
+        endpoints with a rise transition at the pin itself 
+    -to_fall <inst|hinst|external_delay|clock|port|pin|hpin>+:
+        endpoints with a fall transition at the pin itself 
+    -capture_clock_pins <pin|hpin>+:
+        sequential clock pins at the path endpoint 
+    -capture_clock_pins_rise_clock <pin|hpin>+:
+        pins that capture with rising clock edge 
+    -capture_clock_pins_fall_clock <pin|hpin>+:
+        pins that capture with falling clock edge 
+    -capture_clock_pins_rise_pin <pin|hpin>+:
+        pins that capture with rise transition at the pin itself 
+    -capture_clock_pins_fall_pin <pin|hpin>+:
+        pins that capture with fall transition at the pin itself 
+    [-exceptions <exception>+]:
+        report paths for exceptions 
+    [-group <cost_group>+]:
+        report paths for the specified cost groups/path groups 
+    [-timing_bin <timing_bin>]:
+        timing bin to report 
+    [-timing_path <timing_bin_path>]:
+        timing path to report 
+    [<timing_path>+]:
+        path_collection 
+Fields presented are controlled by the '-fields' switch or the attribute
+'timing_report_fields' and 'timing_report_endpoint_fields'
+Valid full report fields are:
+  - timing_point:        names of pins
+  - flags:               flags associated with the column timing_point
+  - arc:                 timing arc for which timing information was applied
+  - edge:                rising/falling edge
+  - cell:                cell type, exception type, etc.
+  - fanout:              fanout of leaf cells
+  - load:                load of leaf cells
+  - transition:          slew of leaf cell outputs
+  - transition_mean:     mean slew of leaf cell outputs
+  - transition_sigma:    sigma slew of leaf cell outputs
+  - delay:               delay through a leaf cell
+  - delay_mean:          mean delay through a leaf cell
+  - delay_sigma:         sigma delay through a leaf cell
+  - arrival:             arrival time at a leaf cell
+  - arrival_mean:        mean arrival time at a leaf cell
+  - arrival_sigma:       sigma arrival time at a leaf cell
+  - lib_set:             display the library set of the cell
+  - user_derate:         derating information
+  - user_mean_derate:    mean derating information
+  - user_sigma_derate:   derating information
+  - total_derate:        total derating information
+  - incr_derate:        incr derating information
+  - aocv_derate:         aocv derating information
+  - socv_derate:         socv spatial derating information
+  - stage_count:         aocv stage depth
+  - power_domain:        power domain associated with the object
+  - wire_length:         wire length
+  - instance_location:       instance location
+  - pin_location:        pin location
+  - module:              name of the subdesign
+  - frc:                 file row column information
+  - voltage:             voltage information
+1
+@genus:root: 5> ls
+create_clock.sdc
+design_with_multipleclk.v
+flex624.log
+fv
+genus.cmd
+genus.log
+synth.tcl
+@genus:root: 6> ls
+create_clock.sdc
+design_with_multipleclk.v
+flex624.log
+fv
+genus.cmd
+genus.log
+synth.tcl
+@genus:root: 7> report timing > timing_reports.txt
+@genus:root: 8> ls
+create_clock.sdc
+design_with_multipleclk.v
+flex624.log
+fv
+genus.cmd
+genus.log
+synth.tcl
+timing_reports.txt
+@genus:root: 9> gvim timing_reports
+@genus:root: 10> gvim timing_reports.txt
+@genus:root: 11> gedit create_clock.sdc
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 1597s, ST: 42s, FG: 42s, CPU: 4.4%}, MEM {curr: 0.8G, peak: 0.9G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.2, cpu: 4, total: 7.5G, free: 1.5G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 1600s, ST: 42s, FG: 42s, CPU: 4.4%}, MEM {curr: 0.8G, peak: 0.9G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.2, cpu: 4, total: 7.5G, free: 1.5G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 1612s, ST: 42s, FG: 42s, CPU: 4.0%}, MEM {curr: 0.8G, peak: 0.9G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.2, cpu: 4, total: 7.5G, free: 1.5G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 1613s, ST: 42s, FG: 42s, CPU: 4.0%}, MEM {curr: 0.8G, peak: 0.9G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.2, cpu: 4, total: 7.5G, free: 1.5G}
+Abnormal exit.
