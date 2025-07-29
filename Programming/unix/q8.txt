@@ -1,0 +1,8 @@
+Q. Using grep print lib cell name, pins, and function in a given library file
+
+:grep -i "cell" /home/installs/FOUNDARY/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+
+:grep -i "pin" /home/installs/FOUNDARY/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+
+:grep -i "function" /home/installs/FOUNDARY/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+

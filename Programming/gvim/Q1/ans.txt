@@ -1,0 +1,5 @@
+get_cell [U_TOP_LOGIC/U_CORE_SW/U_KM33/core/u_pd_core/u_core/u_testcore_dpu/iadx_q* ] 
+get_cell [U_TOP_LOGIC/U_CORE_SW/U_KM33/core/u_pd_core/u_core/u_testcore_dpu/imgx_q* ] 
+get_cell [U_TOP_LOGIC/U_CORE_SW/U_KM33/core/u_pd_core/u_core/u_testcore_dpu/iahhhhx_q* ] 
+get_cell [U_TOP_LOGIC/U_CORE_SW/U_KM33/core/u_pd_core/u_core/u_testcore_dpu/iadfffx_q* ] 
+get_cell [U_TOP_LOGIC/U_CORE_SW/U_KM33/core/u_pd_core/u_core/u_testcore_dpu/iddd_q* ]

@@ -1,0 +1,39 @@
+1. dir project; cd project/2.gvim notes.txt
+
+3.chmod ar notes.txt
+
+4. touch file1.txt file2.txt file3.txt
+
+5.cp notes.txt backup_notes.txt
+
+6.mkdir backup;mv backup_notes.txt backup
+
+7.rm file3.txt; rm -r backup
+
+8.sudo useradd student ; sudo passwd student
+
+
+9.sudo usermod ag sudo student
+
+
+10.tail/var/log/syslog
+
+11.top
+
+12.grep 'error' /var/log/syslog
+
+13. find ~ -type f -name "*.txt"
+
+14. ln -s notes.txt notes link
+
+15.tar -czvf project.tar.gz project
+
+16.tar xzvf project.tar.gz
+
+17.crontab -e
+
+18.df -h disk_usage.txt
+
+19.sudo chown student notes.txt
+
+20.awk '{print $2, $5}' notes.txt

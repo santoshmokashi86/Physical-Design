@@ -1,0 +1,9 @@
+
+We replicated the problem in NGST network by writing RTL from scratch
+Since this fix is not possible in timing eco phase, Only option is RTL and CTS spec change.. we 
+understand RTL change is too late.
+Only option is CTS spec change
+
+
+
+

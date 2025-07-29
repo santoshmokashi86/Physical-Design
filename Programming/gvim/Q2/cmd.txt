@@ -1,0 +1,10 @@
+:%s/testbench\.U_CHIP\.U_TOP_LOGIC/U_TOP_LOGIC/
+:%s/\./\//g
+:%s/^/.probe(xbond.xtop./
+:%s/$/)/g
+:%s/U_TOP_LOGIC/u_top_logic/
+:%s/U_PD_CORE_SW/xu_core_sw/
+:%s/U_OSCCTRL_W/xu_oscil_control_w/
+:%s/U_OSCCTRL/xu_oscil_control/
+:%s/U_DFLL/xu_egmm/
+:%s/U_DFLL48M_CLKCTRL/xu_egmm48m_clkctrl/

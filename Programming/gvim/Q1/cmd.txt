@@ -1,0 +1,6 @@
+:%s/testbench\.U_CHIP\.//g
+:%s/\./\//g
+:%s/^/get_cell [/
+:%s/$/ ]/	                                
+	
+	

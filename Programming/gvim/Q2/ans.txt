@@ -1,0 +1,3 @@
+.probe(xbond.xtop.u_top_logic.xu_core_sw.xu_oscil_control_w.xu_oscil_control.xu_egmm.xu_egmm48m_clkctrl.clr_latch) 
+.probe(xbond.xtop.u_top_logic.xu_core_sw.xu_oscil_control_w.xu_oscil_control.xu_egmm.xu_egmm48m_clkctrl.reset) 
+.probe(xbond.xtop.u_top_logic.xu_core_sw.xu_oscil_control_w.xu_oscil_control.xu_egmm.xu_egmm48m_clkctrl.clk)
