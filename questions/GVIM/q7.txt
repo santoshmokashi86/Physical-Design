@@ -1,0 +1,9 @@
+abc
+set a 5
+test1
+test3
+set b 7
+test2
+set c [expr $a + $b]
+t
+ttt
