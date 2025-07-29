@@ -1,0 +1,21 @@
+Linux Lab Exercises
+1. Create a directory named 'project' and navigate into it.
+2. Create a file named 'notes.txt' and write 'Linux is powerful' into it.
+3. Change the permissions of 'notes.txt' to read-only for all users.
+4. Create three empty files: file1.txt, file2.txt, file3.txt using a single command.
+5. Copy the file 'notes.txt' to a new file named 'backup_notes.txt'.
+6. Move 'backup_notes.txt' into a subdirectory named 'backup'.
+7. Delete 'file3.txt' and the 'backup' directory.
+8. Create a user named 'student' and set a password.
+9. Add 'student' to the 'sudo' group.
+10. View the last 10 lines of '/var/log/syslog' using a command.
+11. Monitor real-time system processes using 'top'.
+12. Use 'grep' to find lines containing 'error' in '/var/log/syslog'.
+13. Use 'find' to search for all '.txt' files in your home directory.
+14. Create a symbolic link to 'notes.txt' called 'notes_link'.
+15. Compress the 'project' directory using tar and gzip.
+16. Extract the compressed tar.gz file.
+17. Set a cron job to display 'Hello Linux' every minute.
+18. Check current disk usage and save the output to a file.
+19. Set file ownership of 'notes.txt' to another user.
+20. How can you use the awk command to print only the second and fifth columns from a space-separated file named data.txt?
